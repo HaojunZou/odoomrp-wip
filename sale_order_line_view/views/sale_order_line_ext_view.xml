@@ -6,7 +6,7 @@
             <field name="model">sale.order.line</field>
             <field name="inherit_id" ref="sale.view_sales_order_line_filter" />
             <field name="arch" type="xml">
-                <field name="salesman_id">
+                <field name="salesman_id" position="after">
                     <field name="order_partner_id"/>
                 </field>
                 <filter string="Status" position="after">
